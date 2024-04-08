@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+        }
+        #photo{
+            width: 40rem;
+            border: 5px solid mediumslateblue;
+            border-radius: 10px;
+        }
+        #photo:hover{
+            cursor: pointer;
+        }
+    </style>
+    <title>Events</title>
+</head>
+<body>
+    <div class="container">
+        <img id="photo" src="https://miro.medium.com/max/1400/1*mdcu3Ku9r44HMtraHUqu5g.jpeg" alt="">
+    </div>
+    <script>
+        // console.log('Hello')
+        let image = document.querySelector('#photo')
+        image.addEventListener('click', function(){
+            alert('The website you are going to visit may harm your computer, do you still want to redirect?');
+            alert('Are You Serious?');
+            alert('Take a Permission From Your Parents');
+        })
+    </script>
+</body>
+</html>
